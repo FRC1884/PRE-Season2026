@@ -13,7 +13,7 @@ import edu.wpi.first.math.numbers.N3;
 import frc.robot.util.LoggedTunableNumber;
 import java.util.function.DoubleSupplier;
 
-// TODO tune all of these!! Make sure that the robot-relative coords are correct - this will cause
+// TODO tune all of these!! Make sure that the robot-relative co-ordinates are correct - this will cause
 // rapid pose oscillation
 public final class AprilTagVisionConstants {
   public static final boolean LEFT_CAM_ENABLED = true;
@@ -95,7 +95,7 @@ public final class AprilTagVisionConstants {
    * Rough values for how much we trust this camera to produce reliable data on our target relative
    * to the other cameras. A lower value means we trust this camera more - for instance, if we're
    * more confident in its calibration than the other cameras. If any cameras are not explicitly
-   * listed here, they will have a deafult ambiguity factor of 1.0.
+   * listed here, they will have a default ambiguity factor of 1.0.
    */
   public static final DoubleSupplier[] CAMERA_AMBIGUITY_FACTORS =
       new LoggedTunableNumber[] {
